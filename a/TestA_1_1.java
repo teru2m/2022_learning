@@ -35,10 +35,12 @@ public class TestA_1_1{
 
 
     static void sort(int[] sArray,int[] array,int flag){
+        
+        for(int i = 0; i < array.length; i++) {
+            sArray[i] = array[i];
+        }
+        
         if(flag == 1){
-            for(int i = 0; i < array.length; i++) {
-                sArray[i] = array[i];
-            }
             for(int i = sArray.length-1; i > 0; i-- ) {
                 for(int j = 0; j < i; j++) {
                     if(sArray[j] > sArray[j+1]) {
